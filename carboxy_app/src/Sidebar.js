@@ -30,6 +30,9 @@ function Sidebar() {
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Tweet
       </Button>
+      <Button variant="outlined" className="sidebar__profile" fullWidth>
+        Login / Sign up
+      </Button>
     </div>
   );
 }
