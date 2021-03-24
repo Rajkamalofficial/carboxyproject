@@ -1,24 +1,50 @@
 .widgets {
   flex: 0.3;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.widgets {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .widgets__input {
+  /* display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px; */
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: #fff;
+}
+
+.widgets__search {
   display: flex;
   align-items: center;
   background-color: var(--twitter-background);
   padding: 10px;
   border-radius: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
 }
 
-.widgets__input > input {
+.widgets__search > input {
   border: none;
   background-color: var(--twitter-background);
 }
 
 .widgets__searchIcon {
   color: gray;
+  position: sticky;
 }
 
 .widgets__widgetContainer {
