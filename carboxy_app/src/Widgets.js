@@ -11,15 +11,17 @@ function Widgets() {
   return (
     <div className="widgets">
       <div className="widgets__input">
+        <div className="widgets__search">
         <SearchIcon className="widgets__searchIcon" />
         <input placeholder="Search Twitter" type="text" />
+        </div>
       </div>
 
       <div className="widgets__widgetContainer">
         <h2>What's happening</h2>
 
         <TwitterTweetEmbed tweetId={"858551177860055040"} />
-
+        
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="cleverqazi"
